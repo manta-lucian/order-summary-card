@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --color-Pale-blue: #e0e8ff;
+  --color-Bright-blue: #3829e0;
+  --color-shadow: #3829e049;
+  --color-Very-pale-blue: #f5f7ff;
+  --color-Desaturated-blue: #7280a7;
+  --color-Dark-blue: #1f2f56;
+  --fontsize-default: 1.6rem;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: var(--color-Pale-blue);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: url("../images/pattern-background-desktop.svg"), var(--color-Pale-blue);
+  background-repeat: no-repeat;
+  font-size: var(--fontsize-default);
+  font-family: "Red Hat Display";
+}
+
+.card {
+  width: 30rem;
+  background: #fff;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+.card__image {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.text-contet {
+  padding: 2rem;
+}
+.card__heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+}
+.card__text {
+  font-size: 1.4rem;
+  color: var(--color-Desaturated-blue);
+}
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-Very-pale-blue);
+  width: 80%;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+.plan-left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.plan-left__image {
+  width: 4rem;
+}
+.plan-left__price-plan {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 0.2rem;
+}
+.plan-left__price-price {
+  font-size: 1.25rem;
+  color: var(--color-Desaturated-blue);
+}
+.plan-right__link {
+  font-size: 1.4rem;
+  color: var(--color-Bright-blue);
+}
+.button {
+  width: 80%;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 1rem;
+  background: var(--color-Bright-blue);
+  color: var(--color-Very-pale-blue);
+  font-weight: 700;
+  margin-bottom: 2rem;
+  box-shadow: 0 1.5rem 2.5rem var(--color-shadow);
+  cursor: pointer;
+}
+.cancel__link {
+  font-weight: 700;
+  color: var(--color-Desaturated-blue);
+  text-decoration: none;
+}
+.cancel {
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 650px) {
+  main {
+    width: 100%;
+  }
+}
